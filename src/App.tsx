@@ -8,9 +8,14 @@ import Experience from './components/Experience';
 import Certifications from './components/Certifications';
 import Footer from './components/Footer';
 
+import cursorImg from './assets/cursor.jpg'; // import the image
+
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div
+      className="min-h-screen bg-white"
+      style={{ cursor: `url(${cursorImg}), auto` }} // apply cursor here
+    >
       <Navigation />
       <Hero />
       <About />
